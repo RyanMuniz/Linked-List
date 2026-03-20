@@ -6,6 +6,28 @@
 // FileName: "BalanceData.java"
 // Date: March 19, 2026
 
+/*
+BalanceData Class
+Used by SortedTreeSet when checking whether the tree is balanced.
+
+It stores:
+1. Height of a subtree
+2. Whether that subtree is balanced
+*/
 public class BalanceData {
-    
+    // Store the height of a subtree
+    public int height;
+    // Store whether the subtree is balanced
+    public boolean balanced;
+
+    /*
+    BalanceData Constructor method
+    Stores both the subtree height and its balance status.
+    */
+    public BalanceData(int height, boolean balanced) {
+        // Save the height value
+        this.height = height;
+        // Save the balanced value
+        this.balanced = balanced;
+    }
 }
