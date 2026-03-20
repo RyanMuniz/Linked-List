@@ -91,9 +91,9 @@ public class Main {
        // Print the sorted contents of the tree
        System.out.println(people);
        // Print the number of unique employees stored in the tree
-       System.out.println("Unique Employee Count: " + people.size());
+       System.out.printf("%-28s %d%n", "Unique Employee Count: ", people.size());
        // Print whether the tree is balanced before doing anything else
-       System.out.println("Is the tree balanced? " + people.isBalanced());
+       System.out.printf("%-28s %b%n", "Is the tree balanced? ", people.isBalanced());
        /*
        If the tree is not balanced, rebalance it and show the results again.
        (Extra Credit)
@@ -117,9 +117,9 @@ public class Main {
       */
       if (people.size() > 0) {
         // Print the first Person in sorted order.
-        System.out.println("First person alphabetically: " + people.get(0));
+        System.out.printf("%-28s %s%n", "First person alphabetically: ", people.get(0));
         // Print the last Person in sorted order.
-        System.out.println("Last person alphabetically: " + people.get(people.size() - 1));
+        System.out.printf("%-28s %s%n", "Last person alphabetically: ", people.get(people.size() - 1));
       }
       /*
       Demonstrate the extra credit parent reference.
@@ -127,9 +127,9 @@ public class Main {
       */
       if (people.hasLeft()) {
         // Print the left child of the root
-        System.out.println("Root's left child: " + people.getLeft().getPerson());
+        System.out.printf("%-28s %s%n", "Root's left child: ", people.getLeft().getPerson());
         // Print that left child's parent
-        System.out.println("That node's parent: " + people.getLeft().getParent().getPerson());
+        System.out.printf("%-28s %s%n", "That node's parent: ", people.getLeft().getParent().getPerson());
       }
     }
     catch (IOException e) {
