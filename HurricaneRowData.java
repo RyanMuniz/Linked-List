@@ -82,7 +82,7 @@ public class HurricaneRowData {
 	// Returns a formatted String rep. of the object
 	@Override
 	public String toString() {
-		return String.format("%10d%11.0f%11d%11d",
+		return String.format("%10d%11.0f%11d%11d%11d",
             year, ace, storms, hurricanes, majorHurricanes);
 	}
  }
