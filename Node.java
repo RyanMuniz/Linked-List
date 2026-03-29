@@ -62,7 +62,14 @@ public class Node {
   hasPrevious
   Returns true if this node has a previous node.
   */
- public Node hasPrevious() {
+ public boolean hasPrevious() {
+    return previous != null;
+ }
+ /*
+ getPrevious method
+ Returns the previous node reference.
+ */
+ public Node getPrevious() {
     return previous;
  }
  /*

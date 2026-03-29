@@ -6,8 +6,7 @@
 // FileName: "DoublyLinkedSortedList.java"
 // Date: March 28, 2026
 
-public class DoublyLinkedSortedList {
-    implements DoublyLinkedSortedListInterface {
+public class DoublyLinkedSortedList implements DoublyLinkedSortedListInterface {
         // Reference to the first and last node in list
         private Node first;
         private Node last;
@@ -17,7 +16,8 @@ public class DoublyLinkedSortedList {
         public DoublyLinkedSortedList() {
             // Empty list starts with no first or last node
             first = null;
-            last = null; }
+            last = null; 
+        }
         /*
         getFirst
         Returns a reference to the first node in the list.
@@ -119,7 +119,7 @@ public class DoublyLinkedSortedList {
                         first.setPrevious(null);
                     }
                     // 3. Removing the last node
-                    else if (current = last) {
+                    else if (current == last) {
                         last = current.getPrevious();
                         last.setNext(null);
                     }
@@ -140,5 +140,27 @@ public class DoublyLinkedSortedList {
             // If value wasn't found return null
             return null;
         }
+        /*
+        contains method
+        Returns true if the linked list contains the given value.
+        Returns false otherwise.
+        */
+        public boolean contains(HurricaneRowData value) {
+            return getByValue(value) != null;
+        }
+        /*
+        getByValue method
+        Returns the node whose value matches the given value.
+        Returns null if value is not found.
+        */
+        public Node getByValue(HurricaneRowData value) {
+            Node current = first;
+            while (current != null) {
+                if (current.getValue().equals(value)) {
+                    return current;
+                }
+                current = current.getNext();
+            }
+            return null;
+        }
     }
-}

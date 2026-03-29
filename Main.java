@@ -9,16 +9,11 @@
 // Import utilities
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 // Driver class of the program
 // Execution begins here
 public class Main {
-    // Tests to see output
-    runLinkedListTests();
     /*
     main method
     This method:
@@ -30,6 +25,9 @@ public class Main {
     6. Prints all hurrican data in sorted order by ACE
     */
 	public static void main(String[] args) {
+        // Run the linked list test so we can verify list is working 
+        // before loading full file
+        runLinkedListTests();
 		// Create the doubly linked sorted list that will store all
         // HurricaneRowData objects in sorted order as they are added
 		DoublyLinkedSortedList hurricaneDataList = new DoublyLinkedSortedList();
@@ -170,7 +168,7 @@ public class Main {
     boolean containsAfterRemove = testList.contains(row3);
     // Build each correct condition
     boolean foundCorrectNode = foundNode != null && foundNode.getValue().equals(row3);
-    boolean removedCorrectNode = foundNode != null && removedNode.getValue().equals(row3);
+    boolean removedCorrectNode = removedNode != null && removedNode.getValue().equals(row3);
     boolean removedSuccessfully = !containsAfterRemove;
     // Return true only if every expected behavior occurred.
     return containsBeforeRemove &&

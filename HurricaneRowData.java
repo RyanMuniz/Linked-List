@@ -68,13 +68,21 @@ public class HurricaneRowData {
         if (!(otherObject instanceof HurricaneRowData)) {
             return false;
         }
+        // Type cast the Object reference into a HurricaneRowData reference
+        HurricaneRowData other = (HurricaneRowData) otherObject;
+        // Return true only if all fields match
+        return this.year == other.year &&
+            this.ace == other.ace &&
+            this.storms == other.storms &&
+            this.hurricanes == other.hurricanes &&
+            this.majorHurricanes == other.majorHurricanes;
     }
 
 	// toString
 	// Returns a formatted String rep. of the object
 	@Override
 	public String toString() {
-		return String.format("%10%11.0f%11d%11d",
+		return String.format("%10d%11.0f%11d%11d",
             year, ace, storms, hurricanes, majorHurricanes);
 	}
  }
