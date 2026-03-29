@@ -2,8 +2,9 @@
 // Email: rmuniz15@cnm.edu
 // Class: CSCI 2260: Section R01
 // Assignment: Week 8: Linked List
-// Purpose: 
-// FileName: "Main.java"
+// Purpose: Defines the required methods for a doubly linked sorted list,
+// including insertion, removal, and access operations.
+// FileName: "DoublyLinkedSortedListInterface.java"
 // Date: March 28, 2026
 
 public interface DoublyLinkedSortedListInterface {

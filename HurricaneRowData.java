@@ -2,7 +2,8 @@
 // Email: rmuniz15@cnm.edu
 // Class: CSCI 2260: Section R01
 // Assignment: Week 8: Linked List
-// Purpose: 
+// Purpose: Represents one row of hurricane data, storing values such as
+// year, ACE, storms, hurricanes, and major hurricanes.
 // FileName: "HurricaneRowData.java"
 // Date: March 28, 2026
 

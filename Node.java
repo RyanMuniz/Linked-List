@@ -2,7 +2,8 @@
 // Email: rmuniz15@cnm.edu
 // Class: CSCI 2260: Section R01
 // Assignment: Week 8: Linked List
-// Purpose: 
+// Purpose: Represents a single node in the doubly linked list that stores
+// a HurricaneRowData object and references to adjacent nodes.
 // FileName: "Node.java"
 // Date: March 28, 2026
 

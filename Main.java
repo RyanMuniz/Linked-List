@@ -2,7 +2,9 @@
 // Email: rmuniz15@cnm.edu
 // Class: CSCI 2260: Section R01
 // Assignment: Week 8: Linked List
-// Purpose: 
+// Purpose: Reads hurrican data from a file, stores it in a doubly linked
+// sorted list, runs tests, and displays the year with the highest ACE
+// along with all data sorted in order.
 // FileName: "Main.java"
 // Date: March 28, 2026
 

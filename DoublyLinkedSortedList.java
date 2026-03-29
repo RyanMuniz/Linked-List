@@ -2,7 +2,8 @@
 // Email: rmuniz15@cnm.edu
 // Class: CSCI 2260: Section R01
 // Assignment: Week 8: Linked List
-// Purpose: 
+// Purpose: Implements a doubly linked list that maintains HurricaneRowData
+// objects in descending order by ACE during insertion.
 // FileName: "DoublyLinkedSortedList.java"
 // Date: March 28, 2026
 
