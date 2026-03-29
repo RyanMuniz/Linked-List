@@ -163,4 +163,26 @@ public class DoublyLinkedSortedList implements DoublyLinkedSortedListInterface {
             }
             return null;
         }
+        /*
+        toString method
+        Returns the entire linked list as a multi-line String.
+        Each node is printed on its own line.
+        */
+        @Override
+        public String toString() {
+            StringBuilder output = new StringBuilder();
+            // Start at first node in list
+            Node current = first;
+            // Continue until we reach end of list
+            while (current != null) {
+                // Add the current HurricaneRowData as one line
+                output.append(current.getValue().toString());
+                // Move to the next line after each row
+                output.append("\n");
+                // Move forward to the next node
+                current = current.getNext();
+            }
+            // Return the completed multi-line String
+            return output.toString();
+        }
     }
