@@ -81,7 +81,7 @@ public class Main {
         int maxYear = maxAceData.getYear();
 
 		// Display results to console
-		System.out.println("Year of max ACE: " + maxYear);
+		System.out.println("Year of max ace: " + maxYear);
 		System.out.println("All data in order of Ace:");
 		System.out.print(hurricaneDataList);
 	}
